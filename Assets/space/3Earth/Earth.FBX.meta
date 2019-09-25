@@ -5,25 +5,28 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: Earth
-    100004: Moon
-    100006: Moon-orbit
-    100008: Omni001
+    100004: EarthCloud
+    100006: Moon
+    100008: Moon-orbit
     400000: //RootNode
     400002: Earth
-    400004: Moon
-    400006: Moon-orbit
-    400008: Omni001
+    400004: EarthCloud
+    400006: Moon
+    400008: Moon-orbit
     2100000: Earth
     2100002: Moon
+    2100004: 03 - Default
     2300000: Earth
-    2300002: Moon
+    2300002: EarthCloud
+    2300004: Moon
     3300000: Earth
-    3300002: Moon
+    3300002: EarthCloud
+    3300004: Moon
     4300000: Earth
     4300002: Moon
+    4300004: EarthCloud
     7400000: Earth
     9500000: //RootNode
-    10800000: Omni001
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -63,7 +66,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
