@@ -655,6 +655,7 @@ namespace CurvedUI
             MeshCollider mc = this.gameObject.AddComponent<MeshCollider>();
             mf.mesh = meshie;
             mc.sharedMesh = meshie;
+            mc.convex = true;
         }
 
 
