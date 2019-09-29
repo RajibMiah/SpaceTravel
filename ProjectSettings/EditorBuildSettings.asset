@@ -5,7 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Voyger_1.unity
+    guid: 5e1271e9a780a064ca35f7e7d7eac5c7
+  - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: f39763e7064f1d446a27a018f5899fba
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Voyager_1_New.unity
+    guid: df6c2e3c13c634e48906d04ca5d174f6
   m_configObjects: {}

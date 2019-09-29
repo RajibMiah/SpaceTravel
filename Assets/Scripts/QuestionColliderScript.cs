@@ -18,10 +18,16 @@ public class QuestionColliderScript : MonoBehaviour
         {
 
             //FindObjectOfType<Voyger1SpeedControl>().speed = 0;
-            if (ctrl1 != null)
+            if (ctrl1 != null) {
                 ctrl1.speed = 0;
-            if (ctrl2 != null)
+                //ctrl2.enabled = false;
+            }
+           
+            if (ctrl2 != null) {
                 ctrl2.speed = 0;
+                //ctrl2.enabled = false;
+            }
+            
             //IF QUESTION IS TRUE THEN GO AHARD AND CONVERT THE SPEED  0 TO 100 
             //IF QUESTION IS NOT TRUE THEN GO BACK TO THE FAST PLANET AND CONVERT THE SPEED 0 TO 0.2
       

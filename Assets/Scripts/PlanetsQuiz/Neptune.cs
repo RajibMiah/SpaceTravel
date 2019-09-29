@@ -2,23 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Earth : MonoBehaviour
+public class Neptune : MonoBehaviour
 {
-    public QuestionCollector[] questions;
+    public QuestionCollector[] questions = new QuestionCollector[4];
     public int maxQuestions = 3;
-    void Start()
-    {
-        questions = new QuestionCollector[4];
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void OnTriggerEnter(Collider other) {
-        if(other.gameObject.tag == "Player") {
+        if (other.gameObject.tag == "Player") {
+            if (other.gameObject.GetComponent<Voyger2SpeedCrontroll>() != null) {
+                other.gameObject.GetComponent<Voyger2SpeedCrontroll>().speed = 0;
+                other.gameObject.GetComponent<Voyger2SpeedCrontroll>().enabled = false;
+            }
+            else if (other.gameObject.GetComponent<Voyger1SpeedControl>() != null) {
+                other.gameObject.GetComponent<Voyger1SpeedControl>().speed = 0;
+                other.gameObject.GetComponent<Voyger1SpeedControl>().enabled = false;
+            }
             QuestionTemplate();
         }
     }
@@ -45,5 +44,6 @@ public class Earth : MonoBehaviour
 
         QuizManager.instance.maxQuestions = maxQuestions;
         QuizManager.instance.ReceiveQuiz(questions);
+        QuizManager.instance.LastPlanet = true;
     }
 }
